@@ -32,10 +32,16 @@
                                 <state key="normal" title="다시 시작">
                                     <color key="titleColor" systemColor="systemRedColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="touchUpResetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aKE-8w-5Ku"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YTJ-wq-Acx">
                                 <rect key="frame" x="100" y="239" width="30" height="30"/>
                                 <state key="normal" title="제출"/>
+                                <connections>
+                                    <action selector="touchUpSubmitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gpb-Vh-GEp"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uSd-Sp-Jct">
                                 <rect key="frame" x="327" y="104" width="42" height="21"/>
@@ -64,11 +70,16 @@
                             <outletCollection property="gestureRecognizers" destination="Euo-83-7UT" appends="YES" id="80i-NL-aCz"/>
                         </connections>
                     </view>
+                    <connections>
+                        <outlet property="inputValue" destination="998-no-qNg" id="gIO-RK-rfm"/>
+                        <outlet property="resultUpDown" destination="WRM-4d-w0q" id="gfU-KR-H6g"/>
+                        <outlet property="turnCount" destination="uSd-Sp-Jct" id="3Uw-Qa-vOB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="Euo-83-7UT"/>
             </objects>
-            <point key="canvasLocation" x="30" y="119"/>
+            <point key="canvasLocation" x="12" y="110"/>
         </scene>
     </scenes>
     <resources>
