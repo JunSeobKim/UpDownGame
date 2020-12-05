@@ -25,7 +25,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="998-no-qNg">
                                 <rect key="frame" x="100" y="165" width="214" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="So6-GR-fFm">
                                 <rect key="frame" x="258" y="239" width="56" height="30"/>
@@ -70,6 +70,7 @@
                             <outletCollection property="gestureRecognizers" destination="Euo-83-7UT" appends="YES" id="80i-NL-aCz"/>
                         </connections>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <connections>
                         <outlet property="inputValue" destination="998-no-qNg" id="gIO-RK-rfm"/>
                         <outlet property="resultUpDown" destination="WRM-4d-w0q" id="gfU-KR-H6g"/>
@@ -77,7 +78,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="Euo-83-7UT"/>
+                <tapGestureRecognizer id="Euo-83-7UT">
+                    <connections>
+                        <action selector="tapBackground:" destination="BYZ-38-t0r" id="uoR-jy-WMo"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="12" y="110"/>
         </scene>
